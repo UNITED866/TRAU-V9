@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhận key miễn phí</title>
+
+<style>
+.telegram-box.group{
+    background:#eef3ff;
+    border:2px solid #4c6fff;
+}
+
+.telegram-box.group .tele-icon{
+    background:#4c6fff;
+}
+
+.telegram-box.group .tele-title,
+.telegram-box.group .tele-arrow{
+    color:#4c6fff;
+}
+
+.telegram-box.group .tele-sub{
+    color:#5a6fb0;
+}
+
+.telegram-box{
+    background:#e8f5f3;
+    border:2px solid #2f6f68;
+    cursor:pointer;
+}
+
+.tele-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.tele-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#2f6f68;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.tele-title{
+    font-weight:700;
+    color:#2f6f68;
+}
+
+.tele-sub{
+    font-size:13px;
+    color:#4b7f78;
+}
+
+.tele-arrow{
+    margin-left:auto;
+    font-size:26px;
+    color:#2f6f68;
+}
+
+.game-item{
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.game-item.active{
+    background:#2f6f68;
+    color:#fff;
+}
+
+.game-item.active span{
+    color:#e0fffa;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+body{
+    margin:0;
+    background:#f4f2ee;
+    padding:15px;
+}
+
+/* Card */
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:16px;
+    margin-bottom:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.05);
+}
+
+/* Title */
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#e6f3f1;
+    color:#2c7f75;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+h1{
+    margin:10px 0 6px;
+    font-size:22px;
+}
+.sub{
+    color:#666;
+    font-size:14px;
+}
+
+/* Search */
+.search{
+    margin:15px 0;
+}
+.search input{
+    width:100%;
+    padding:12px 14px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    font-size:14px;
+}
+
+/* Game list */
+.game{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f7f4;
+    padding:12px 14px;
+    border-radius:14px;
+    margin-bottom:10px;
+    font-weight:600;
+}
+.game span{
+    color:#888;
+    font-weight:500;
+    font-size:13px;
+}
+
+/* Buttons */
+.btn-main{
+    width:100%;
+    background:#2f6f68;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:16px;
+    font-size:16px;
+    font-weight:700;
+    margin-top:10px;
+}
+.btn{
+    width:100%;
+    background:#fff;
+    border:2px solid #2f6f68;
+    color:#2f6f68;
+    padding:12px;
+    border-radius:16px;
+    font-size:15px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+/* Info row */
+.info{
+    display:flex;
+    gap:8px;
+    margin-top:12px;
+    flex-wrap:wrap;
+}
+.info div{
+    background:#f0efec;
+    padding:6px 10px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+/* Guide */
+.guide h3{
+    margin-top:0;
+}
+.guide ol{
+    padding-left:18px;
+    color:#555;
+}
+.telegram{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:10px;
+    color:#2f6f68;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+function openTelegramAdmin(){
+    window.open("https://t.me/vanhiep20000", "_blank");
+}
+
+function openTelegramGroup(){
+    window.open("https://t.me/vhmodsgames", "_blank");
+}
+</script>
+
+<div class="card">
+    <div class="badge">⚡ KEY MIỄN PHÍ</div>
+    <h1>Nhận key miễn phí</h1>
+    <div class="sub"></div>
+
+    <div class="game game-item">ITACHI PING<span>— FAKELAG</span></div>
+
+    <button class="btn-main" onclick="goFreeKey()">Nhận key miễn phí</button>
+    <button class="btn" onclick="goIB()">ITACHI PING</button>
+
+    <div class="info">
+        <div>Số lần vượt link: 2 lần</div>
+        <div>Thời hạn key: 1 ngày</div>
+        <div>Thiết bị: 1</div>
+    </div>
+</div>
+
+<div class="card guide">
+    <h3>Hướng dẫn nhanh</h3>
+    <ol>
+        <li>Chọn đúng game bạn muốn nhận key.</li>
+        <li>Nhấn nút <b>"Nhận key miễn phí"</b>.</li>
+        <li>Vượt link theo số bước quy định.</li>
+        <li>Key sẽ hiện ra tại trang kích hoạt.</li>
+    </ol>
+
+<div class="card telegram-box" onclick="openTelegram()">
+    <div class="tele-left">
+        <div class="tele-icon">✈️</div>
+        <div>
+            <div class="tele-title">GROUP CHAT</div>
+            <div class="tele-sub">Chat Chung</div>
+        </div>
+    </div>
+    <div class="tele-arrow">›</div>
+</div>
+
+<div class="card telegram-box" onclick="openTelegramAdmin()">
+    <div class="tele-left">
+        <div class="tele-icon">👤</div>
+        <div>
+            <div class="tele-title">Telegram Admin</div>
+            <div class="tele-sub">Liên hệ trực tiếp admin hỗ trợ</div>
+        </div>
+    </div>
+    <div class="tele-arrow">›</div>
+</div>
+
+<div class="card telegram-box group" onclick="openTelegramGroup()">
+    <div class="tele-left">
+        <div class="tele-icon">👥</div>
+        <div>
+            <div class="tele-title">Telegram Group</div>
+            <div class="tele-sub">Nhóm Thông Báo </div>
+        </div>
+    </div>
+    <div class="tele-arrow">›</div>
+</div>
+
+    <div class="telegram">
+        📩 Hỗ trợ nhanh qua Telegram
+    </div>
+    <div class="sub">
+        Nếu gặp lỗi, hãy chụp màn hình và gửi về admin để được xử lý nhanh.
+    </div>
+</div>
+
+</body>
+
+<script>
+function openTelegram(){
+    window.open("https://t.me/vhmodsgame", "_blank");
+}
+</script>
+
+<script>
+const games = document.querySelectorAll('.game-item');
+
+games.forEach(game => {
+    game.addEventListener('click', () => {
+        games.forEach(g => g.classList.remove('active'));
+        game.classList.add('active');
+    });
+});
+</script>
+
+<script>
+function goFreeKey(){
+    window.location.href = "https://vuotnhanh.com/zUpV";
+}
+
+function goIB(){
+    window.location.href = "https://link4m.com/wCR6mdtC";
+}
+
+function goAuto(){
+    window.location.href = "https://link4m.com/go/Kv8s4";
+}
+</script>
+
+</html>
